@@ -199,8 +199,7 @@ z-index: 9;
   width: 100%;
 }
 .slide-one {background-image: url(img/slide-1.jpg)}
-.slide-two {background-image: url(img/slide-2.jpg)}
-.slide-three {background-image: url(img/slide-3.jpg)}
+.slide-two {background-image: url(img/slide-2.jpeg)}
 .slide-text {color: #fff;font-size: 18px;font-weight: 200}
 .slide-text h2 {
   font-size: 45px;font-weight: 200
@@ -271,8 +270,18 @@ z-index: 9;
 
 
 .product-f-image {
-    position: relative;
+    
+    width:150px; height:200px; align-items:center; justify-content: center;
+
 }
+
+.product-f-image img {
+    max-width: 100%;
+    max-height: 100%;
+    display:block;
+    margin: auto auto;
+}
+
 .product-hover {
     height: 100%;
     left: 0;
