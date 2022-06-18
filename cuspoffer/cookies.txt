@@ -1,6 +1,0 @@
-# HTTrack Website Copier Cookie File
-# This file format is compatible with Netscape cookies
-hm.baidu.com	TRUE	/	FALSE	1999999999	HMACCOUNT	C07D773B5BC44388
-www.cuspoffer.com	TRUE	/	FALSE	1999999999	CuspofferWeb	CfDJ8FKqwxL9jlpHiiuvO506OoG9dyhhbZNXZC%2FZKhKnh3%2F1vyvmlreJoep%2Ff%2FiuzXyY6qjSEH%2F%2FclXLLnkJ%2F0rFB2NxQphAybhy9PPyJ0%2FPs2PZz7BZxOekM2hCf%2BVbDumaVH1unNIZs0oGyKoJa192jklXYO%2BVELF49Rg3gBg68H6v
-www.layuicdn.com	TRUE	/	FALSE	1999999999	https_waf_cookie	a806f9b2-1339-4b8315e2cbc254369571b15adc95d63d656a
-
