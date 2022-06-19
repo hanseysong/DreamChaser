@@ -1,8 +1,9 @@
-# website_groupwork
-# Project's title: 
-DreamChaser
+# Group 5 - Website Creation
+## Project's title: 
+# DreamChaser
 
-# Project description:
+
+## Project description:
 It’s a platform that serves Chinese students who want to apply for French Business schools. The main reason why we created such a startup is that in China, it is difficult for Chinese students to get more information and professional guidance apart from some official channels. And compared with western students, studying abroad could be a dream. That’s how the name DreamChaser came. The DreamChaser platform works by connecting experienced tutors and students directly. 
 
 Our goal is to deliver a students-centered website, which is young, efficient, intuitive and user-friendly.  
