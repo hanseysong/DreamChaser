@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>DreamChaser: Where We Help You With Your Biggest Dreams</title>
     <link rel="icon" type="image/x-icon" href="img/logo.png">
+    <script src="js/cart.js" async></script>
     
     <!-- Google Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,300,700,600' rel='stylesheet' type='text/css'>
@@ -125,34 +126,68 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr class="cart_item">
-                                            <td class="product-remove">
-                                                <a title="Remove this item" class="remove" href="#">×</a> 
-                                            </td>
+                                        <tr class="cart-item">
+                                            <div class="cart-row">
+                                                <div class="initial-price">$200</div>
+                                                <td class="product-remove">
+                                                    <a type = 'button' title="Remove this item" class="remove" href="#">×</a> 
+                                                </td>
 
-                                            <td class="product-thumbnail">
-                                                <a href="tutor-profile.html"><img width="145" height="145" alt="poster_1_up" class="shop_thumbnail" src="img/service.webp"></a>
-                                            </td>
+                                                <td class="product-thumbnail">
+                                                    <a href="tutor-profile.html"><img width="145" height="145" alt="poster_1_up" class="shop_thumbnail" src="img/service.webp"></a>
+                                                </td>
 
-                                            <td class="product-name">
-                                                <a href="tutor-profile.html">Mock Interview</a> 
-                                            </td>
+                                                <td class="product-name">
+                                                    <a href="tutor-profile.html">Mock Interview</a> 
+                                                </td>
 
-                                            <td class="product-price">
-                                                <span class="amount">$200</span> 
-                                            </td>
+                                                <td class="product-price">
+                                                    <span class="amount product-price-1">$200</span>
+                                                </td>
 
-                                            <td class="product-quantity">
-                                                <div class="quantity buttons_added">
-                                                    <input type="button" class="minus" value="-">
-                                                    <input type="number" size="4" class="input-text qty text" title="Qty" value="1" min="0" step="1">
-                                                    <input type="button" class="plus" value="+">
-                                                </div>
-                                            </td>
+                                                <td class="product-quantity">
+                                                    <div class="quantity buttons_added">
+                                                        <input type="button" class="minus" value="-">
+                                                        <input type="number" size="4" class="product-quantity-1 cart-quantity input-text qty text" title="Qty" value="1" min="0" step="1">
+                                                        <input type="button" class="plus" value="+">
+                                                    </div>
+                                                </td>
 
-                                            <td class="product-subtotal">
-                                                <span class="amount">$200</span> 
-                                            </td>
+                                                <td class="product-subtotal">
+                                                    <span class="amount">$200</span> 
+                                                </td>
+                                            </div>
+                                        </tr>
+                                        <tr class="cart-item">
+                                            <div class="cart-row">
+                                                <td class="product-remove">
+                                                    <a type = 'button' title="Remove this item" class="remove" href="#">×</a> 
+                                                </td>
+
+                                                <td class="product-thumbnail">
+                                                    <a href="tutor-profile.html"><img width="145" height="145" alt="poster_1_up" class="shop_thumbnail" src="img/service.webp"></a>
+                                                </td>
+
+                                                <td class="product-name">
+                                                    <a href="tutor-profile.html">CV Review</a> 
+                                                </td>
+
+                                                <td class="product-price">
+                                                    <span class="amount">$200</span>
+                                                </td>
+
+                                                <td class="product-quantity">
+                                                    <div class="quantity buttons_added">
+                                                        <input type="button" class="minus" value="-">
+                                                        <input type="number" size="4" class="cart-quantity input-text qty text" title="Qty" value="1" min="0" step="1">
+                                                        <input type="button" class="plus" value="+">
+                                                    </div>
+                                                </td>
+
+                                                <td class="product-subtotal">
+                                                    <span class="amount">$200</span> 
+                                                </td>
+                                            </div>
                                         </tr>
                                         <tr>
                                             <td class="actions" colspan="6">
@@ -178,7 +213,7 @@
                                     <tbody>
                                         <tr class="cart-subtotal">
                                             <th>Cart Subtotal</th>
-                                            <td><span class="amount">$200</span></td>
+                                            <td><span class="cart-total">$200</span></td>
                                         </tr>
 
                                         <tr class="shipping">
