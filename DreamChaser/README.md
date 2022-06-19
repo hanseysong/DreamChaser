@@ -1,15 +1,23 @@
 # Group 5 - Website Creation
+Qiyang MENG, Yuejun SONG, Fan XU, Hui Zheng
+
 ## Project's title: 
 # DreamChaser
 
 
-## Project description:
+# Project description:
 It’s a platform that serves Chinese students who want to apply for French Business schools. The main reason why we created such a startup is that in China, it is difficult for Chinese students to get more information and professional guidance apart from some official channels. And compared with western students, studying abroad could be a dream. That’s how the name DreamChaser came. The DreamChaser platform works by connecting experienced tutors and students directly. 
 
 Our goal is to deliver a students-centered website, which is young, efficient, intuitive and user-friendly.  
 
 # Website structure:
-Home page, Schools introduction page, Tutors introduction page, Tutors profile page, Cart page, Contact us page.
+#### Home page
+#### Schools introduction page
+#### Tutors introduction page
+#### Tutors profile page
+#### Successful stories page
+#### Cart page
+#### Contact us page
 
 # Customer journey:
 - A friend recommended DreamChaser to look for some professional advice.
@@ -19,3 +27,13 @@ Home page, Schools introduction page, Tutors introduction page, Tutors profile p
 - However he didn’t see a service like general consulting. He then tried to ask for more info and price by sending a message through contact us. 
 - Received message from DreamChaser, saying that he can add a mock interview in the cart and the platform will do the communication. He added a mock interview in the cart and checkout.
 
+# How to Use:
+To view the website locally, there is no need to set up any environment.
+Open index.html and navigate through everything!
+
+
+# Tools used:
+- HTML5, CSS, JavaScript
+- Supabase for integrated online database
+- Owl Carousel as animate plugin
+- JQuery for resizable elements and adaption of different screen sizes
