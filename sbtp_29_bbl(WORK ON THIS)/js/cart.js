@@ -19,8 +19,8 @@ function updateCartTotal() {
     let cartRows = document.getElementsByClassName('cart-row')
     for (let i = 0; i < cartRows.length; i++) {
         let cartRow = cartRows[i]
-        let priceElement1 = document.getElementsByClassName('product-price-1')[0]
-        let quantityElement = document.getElementsByClassName('product-quantity-1')[0]
+        let priceElement1 = cartRow.getElementsByClassName('product-price')[0]
+        let quantityElement = cartRow.getElementsByClassName('product-quantity-1')[0]
         console.log(priceElement1, quantityElement)
 
     }
