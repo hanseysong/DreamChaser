@@ -173,30 +173,30 @@
             <div class="row mt-4">
                 <div class="col-sm-12">
                     <div class="theme-card">
-                        <form class="theme-form">
+                        <form name = 'contact' id = 'contact-form'>
                             <div class="form-row">
                                 <div class="col-md-6">
                                     <label for="name">First Name</label>
-                                    <input type="text" class="form-control" id="name" placeholder="Enter Your name"
+                                    <input type="text" class="form-control" name="name" id="name" placeholder="Enter Your name"
                                            required="">
                                 </div>
                                 <div class="col-md-6">
-                                    <label for="email">Last Name</label>
-                                    <input type="text" class="form-control" id="last-name" placeholder="Email" required="">
+                                    <label for="lastname">Last Name</label>
+                                    <input type="text" class="form-control" name="lastname" id="lastname" placeholder="Last name" required="">
                                 </div>
                                 <div class="col-md-6">
-                                    <label for="review">Phone number</label>
-                                    <input type="text" class="form-control" id="review" placeholder="Enter your number"
+                                    <label for="phone">Phone number</label>
+                                    <input type="text" class="form-control" name="phone" id="phone" placeholder="Enter your number"
                                            required="">
                                 </div>
                                 <div class="col-md-6">
                                     <label for="email">Email</label>
-                                    <input type="text" class="form-control" id="email" placeholder="Email" required="">
+                                    <input type="text" class="form-control" name="email" id="email" placeholder="Email" required="">
                                 </div>
                                 <div class="col-md-12">
                                     <label for="review">Write Your Message</label>
                                 <textarea class="form-control" placeholder="Write Your Message"
-                                          id="exampleFormControlTextarea1" rows="6"></textarea>
+                                          id="message" name="message" rows="6"></textarea>
                                 </div>
                                 <div class="send-button">
                                     <div class="col-sm-8">
@@ -301,4 +301,39 @@
     <!-- Main Script -->
     <script src="js/main.js"></script>
   </body>
+
+  <script src="https://unpkg.com/@supabase/supabase-js"></script>
+  <script>
+      const { createClient } = supabase
+      supabase = createClient("https://heyvbthcnxwengsxsghu.supabase.co", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhleXZidGhjbnh3ZW5nc3hzZ2h1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2NTU2MDAyNzksImV4cCI6MTk3MTE3NjI3OX0.dSUTJPtDV671cVizZU19AiVplHrncdxMj8ep8s4_dmI")
+      
+      const form = document.querySelector('#contact-form')
+      form.addEventListener('submit', async (event) => {
+          event.preventDefault()
+
+          const formInputs = form.querySelectorAll('input, textarea')
+
+          let submision = {}
+
+          formInputs.forEach(element => {
+            const { value, name } = element
+            if (value) {
+                submision[name] = value
+            }
+          })
+
+         console.log(submision)
+
+         const { error } = await supabase.from('entries').insert([submision], { returning: 'minimal'})
+
+         if (error) {
+             alert('There was an error please try again')
+         } else {
+             alert('Thanks for contacting us')
+         }
+
+         formInputs.forEach(element => element.value = '')
+
+      })
+  </script>
 </html>
