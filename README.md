@@ -36,4 +36,4 @@ Open index.html and navigate through everything!
 - HTML5, CSS, JavaScript
 - Supabase for integrated online database
 - Owl Carousel as animate plugin
-- JQuery for resizable elements and adaption of different screen sizes
+- JQuery and Bootstrap for resizable elements and adaption of different screen sizes
