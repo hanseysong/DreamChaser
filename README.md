@@ -1,6 +1,3 @@
-# Group 5 - Website Creation
-Qiyang MENG, Yuejun SONG, Fan XU, Hui Zheng
-
 ## Project's title: 
 # DreamChaser
 
